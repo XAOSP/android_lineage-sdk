@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2e4011a-cbcb-48bf-9986-c14eb0cf042c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lineage/lib/main/java/org/lineageos/platform/internal/TrustInterfaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lineage/lib/main/java/org/lineageos/platform/internal/TrustInterfaceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lineage/res/res/values-pt-rBR/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lineage/res/res/values-pt-rBR/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lineage/res/res/values/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lineage/res/res/values/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lineage/res/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lineage/res/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lineage/res/res/values/symbols.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lineage/res/res/values/symbols.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSecureSettingListPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSecureSettingListPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSecureSettingMainSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSecureSettingMainSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSecureSettingSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSecureSettingSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSystemSettingListPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSystemSettingListPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSystemSettingMainSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSystemSettingMainSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSystemSettingSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/LineageSystemSettingSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SecureSettingMainSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SecureSettingMainSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SecureSettingSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SecureSettingSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SelfRemovingSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SelfRemovingSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SystemSettingMainSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SystemSettingMainSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SystemSettingSwitchPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineagePreferenceLib/java/lineageos/preference/SystemSettingSwitchPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineageSettingsProvider/res/values/defaults.xml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineageSettingsProvider/res/values/defaults.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/LineageSettingsProvider/src/org/lineageos/lineagesettings/LineageDatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/packages/LineageSettingsProvider/src/org/lineageos/lineagesettings/LineageDatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/src/java/lineageos/os/Build.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/src/java/lineageos/os/Build.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/src/java/lineageos/providers/LineageSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/src/java/lineageos/providers/LineageSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/src/java/lineageos/trust/TrustInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/src/java/lineageos/trust/TrustInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/src/java/org/lineageos/internal/notification/LineageNotificationLights.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/src/java/org/lineageos/internal/notification/LineageNotificationLights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/src/java/org/lineageos/internal/util/DeviceKeysConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/src/java/org/lineageos/internal/util/DeviceKeysConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/src/java/org/lineageos/internal/util/PowerMenuUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/src/java/org/lineageos/internal/util/PowerMenuUtils.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2hNMhqcRloetrFLpXA4eGRV7BlU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/pixelodin/android/los21/system/core",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2e4011a-cbcb-48bf-9986-c14eb0cf042c" name="Changes" comment="" />
+      <created>1717430203590</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717430203590</updated>
+    </task>
+    <servers />
+  </component>
+</project>

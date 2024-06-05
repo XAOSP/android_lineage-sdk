@@ -929,13 +929,14 @@ public final class LineageSettings {
          * 0: show the clock in the right position (LTR)
          * 1: show the clock in the center
          * 2: show the clock in the left position (LTR)
+         * 3: hide the clock
          * default: 0
          */
         public static final String STATUS_BAR_CLOCK = "status_bar_clock";
 
         /** @hide */
         public static final Validator STATUS_BAR_CLOCK_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 2);
+                new InclusiveIntegerRangeValidator(0, 3);
 
         /**
          * Whether to hide clock when launcher is visible
@@ -1095,12 +1096,19 @@ public final class LineageSettings {
          * 8 - Last app
          * 9 - Toggle split screen
          * 10 - Kill foreground app
+         * 11 - Torch
+         * 12 - Screenshot
+         * 13 - Volume Panel
+         * 14 - Clear All Notifications
+         * 15 - Notifications
+         * 16 - Toggle Qs Panel
+         * 17 - Ringer Modes
          */
         public static final String KEY_HOME_LONG_PRESS_ACTION = "key_home_long_press_action";
 
         /** @hide */
         public static final Validator KEY_HOME_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Action to perform when the home key is double-tapped.
@@ -1111,7 +1119,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_HOME_DOUBLE_TAP_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Action to perform when the back key is long-pressed.
@@ -1122,7 +1130,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_BACK_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Whether to wake the screen with the back key, the value is boolean.
@@ -1171,7 +1179,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_MENU_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Action to perform when the menu key is long-pressed.
@@ -1182,7 +1190,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_MENU_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Action to perform when the assistant (search) key is pressed. (Default is 3)
@@ -1192,7 +1200,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_ASSIST_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Action to perform when the assistant (search) key is long-pressed. (Default is 4)
@@ -1202,7 +1210,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_ASSIST_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Action to perform when the app switch key is pressed. (Default is 2)
@@ -1212,7 +1220,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_APP_SWITCH_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Action to perform when the app switch key is long-pressed. (Default is 0)
@@ -1222,7 +1230,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_APP_SWITCH_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Action to perform when the screen edge is long-swiped. (Default is 0)
@@ -1232,7 +1240,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_EDGE_LONG_SWIPE_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 10);
+                new InclusiveIntegerRangeValidator(0, 17);
 
         /**
          * Whether to wake the screen with the home key, the value is boolean.
@@ -1705,13 +1713,13 @@ public final class LineageSettings {
 
         /**
          * Whether to allow one finger quick settings expansion on the side of the statusbar.
-         * 0 = 0ff, 1 = right, 2 = left
+         * 0 = 0ff, 1 = right, 2 = left, 3 = both
          */
         public static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
 
         /** @hide */
         public static final Validator STATUS_BAR_QUICK_QS_PULLDOWN_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 2);
+                new InclusiveIntegerRangeValidator(0, 3);
 
         /**
          * Whether to show the brightness slider in quick settings panel.
@@ -1721,7 +1729,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator QS_SHOW_BRIGHTNESS_SLIDER_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 2);
+                new InclusiveIntegerRangeValidator(0, 3);
 
         /**
          * Whether or not volume button music controls should be enabled to seek media tracks
@@ -1989,6 +1997,18 @@ public final class LineageSettings {
                 sBooleanValidator;
 
         /**
+         * Whether to use the default LED values for all apps
+         * 0 = 0ff, 1 = on
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_OVERRIDE =
+                "notification_light_pulse_override";
+
+        /** @hide */
+        public static final Validator NOTIFICATION_LIGHT_PULSE_OVERRIDE_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether auto brightness is applied one shot when screen is turned on
          */
         public static final String AUTO_BRIGHTNESS_ONE_SHOT = "auto_brightness_one_shot";
@@ -2076,6 +2096,54 @@ public final class LineageSettings {
         /** @hide */
         public static final Validator ENABLE_TASKBAR_VALIDATOR =
                 sBooleanValidator;
+
+        /**
+         * Action to perform when the back key is double-tapped.
+         * (Default can be configured via config_doubleTapOnHardwareBackBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         * @hide
+         */
+        public static final String KEY_BACK_DOUBLE_TAP_ACTION = "key_back_double_tap_action";
+
+        /** @hide */
+        public static final Validator KEY_BACK_DOUBLE_TAP_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 18);
+
+        /**
+         * Action to perform when the app switch key is double-tapped.
+         * (Default can be configured via config_doubleTapOnHardwareAppSwitchBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         * @hide
+         */
+        public static final String KEY_APP_SWITCH_DOUBLE_TAP_ACTION = "key_app_switch_double_tap_action";
+
+        /** @hide */
+        public static final Validator KEY_APP_SWITCH_DOUBLE_TAP_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 18);
+
+        /**
+         * Action to perform when the menu key is double-tapped.
+         * (Default can be configured via config_doubleTapOnHardwareMenuBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         * @hide
+         */
+        public static final String KEY_MENU_DOUBLE_TAP_ACTION = "key_menu_double_tap_action";
+
+        /** @hide */
+        public static final Validator KEY_MENU_DOUBLE_TAP_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 18);
+
+        /**
+         * Action to perform when the assist key is double-tapped.
+         * (Default can be configured via config_doubleTapOnHardwareAssistBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         * @hide
+         */
+        public static final String KEY_ASSIST_DOUBLE_TAP_ACTION = "key_assist_double_tap_action";
+
+        /** @hide */
+        public static final Validator KEY_ASSIST_DOUBLE_TAP_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 18);
 
         /**
          * I can haz more bukkits
@@ -2235,6 +2303,8 @@ public final class LineageSettings {
                     NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_COLOR_AUTO,
                     NOTIFICATION_LIGHT_COLOR_AUTO_VALIDATOR);
+            VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_OVERRIDE,
+                    NOTIFICATION_LIGHT_PULSE_OVERRIDE_VALIDATOR);
             VALIDATORS.put(AUTO_BRIGHTNESS_ONE_SHOT, AUTO_BRIGHTNESS_ONE_SHOT_VALIDATOR);
             VALIDATORS.put(HEADSET_CONNECT_PLAYER, HEADSET_CONNECT_PLAYER_VALIDATOR);
             VALIDATORS.put(ZEN_ALLOW_LIGHTS, ZEN_ALLOW_LIGHTS_VALIDATOR);
@@ -2252,6 +2322,11 @@ public final class LineageSettings {
                     CLICK_PARTIAL_SCREENSHOT_VALIDATOR);
             VALIDATORS.put(ENABLE_TASKBAR,
                     ENABLE_TASKBAR_VALIDATOR);
+            VALIDATORS.put(KEY_BACK_DOUBLE_TAP_ACTION, KEY_BACK_DOUBLE_TAP_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_APP_SWITCH_DOUBLE_TAP_ACTION,
+                    KEY_APP_SWITCH_DOUBLE_TAP_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_MENU_DOUBLE_TAP_ACTION, KEY_MENU_DOUBLE_TAP_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_ASSIST_DOUBLE_TAP_ACTION, KEY_ASSIST_DOUBLE_TAP_ACTION_VALIDATOR);
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
         };
@@ -2699,6 +2774,12 @@ public final class LineageSettings {
         public static final String QS_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
 
         /**
+         * Whether to show the brightness slider in quick settings panel.
+         * 0 = Top, 1 = Bottom
+         */
+        public static final String QS_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
+
+        /**
          * Whether to show the auto brightness icon in quick settings panel.
          * @hide
          */
@@ -2788,6 +2869,12 @@ public final class LineageSettings {
          * @hide
          */
         public static final String ADVANCED_REBOOT = "advanced_reboot";
+
+        /**
+         * Whether to show advanced reboot on secured lockscreen
+         * @hide
+         */
+        public static final String ADVANCED_REBOOT_SECURED = "advanced_reboot_secured";
 
         /**
          * Whether detail view for the location tile is enabled

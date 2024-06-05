@@ -328,6 +328,11 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
         }
     }
 
+    @Override
+    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // Do nothing.
+    }
+
     private void moveSettingsToNewTable(SQLiteDatabase db,
                                         String sourceTable, String destTable,
                                         String[] settingsToMove, boolean doIgnore) {
@@ -456,6 +461,9 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
                 loadStringSetting(stmt, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES,
                         R.string.def_notification_pulse_custom_value);
             }
+
+            loadIntegerSetting(stmt, LineageSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT,
+                    R.integer.def_show_battery_percent);
         } finally {
             if (stmt != null) stmt.close();
         }
